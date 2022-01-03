@@ -1,0 +1,9 @@
+export const TILE_MOVE_TIME = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--tile-move-time'));
+export const IMAGE_ID = 'image-slicer-image-id-';
+export const MAIN_WRAPPER_ELEMENT_ID = 'image-slicer-main-';
+export const MAIN_WRAPPER_ELEMENT_CLASS = 'slicer-main-wrapper';
+export const GRID_WRAPPER_ELEMENT_ID = 'image-slicer-grid-';
+export const GRID_WRAPPER_ELEMENT_CLASS = 'slicer-grid-wrapper';
+export const GRID_ELEMENT_ID = 'image-slicer-grid-item-';
+export const GRID_ELEMENT_CLASS = 'slicer-grid-item';
+export const MAIN_TRANSITION_OVERFLOW = 'slicer-transition-overflow';
