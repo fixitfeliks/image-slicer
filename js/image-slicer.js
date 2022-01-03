@@ -205,14 +205,14 @@ export class ImageSlicer {
         });
     }
 
-    getFoldMoves = () => {
+    getFoldMoves() {
         this.frames = [];
         this.frames.push(this.imageGrid.getCurrentState());
         for (let i = 0; i < this.imageGrid.tiles.length; i++) {
             this.imageGrid.tiles[i].foldIn();
         }
         this.frames.push(this.imageGrid.getCurrentState());
-    };
+    }
 
     initFoldItemByStatus() {
         const mainWrapper = document.getElementById(MAIN_WRAPPER_ELEMENT_ID + this.id);

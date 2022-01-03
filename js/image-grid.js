@@ -74,9 +74,6 @@ export class ImageGrid {
 }
 
 class Tile {
-    dir = Math.floor(Math.random() * 4);
-    lastDir = Math.floor(Math.random() * 4);
-
     constructor(id, x, y, width, height, foldDirX, foldDirY) {
         this.id = id;
         this.x = x;
@@ -85,6 +82,8 @@ class Tile {
         this.height = height;
         this.foldDirX = foldDirX;
         this.foldDirY = foldDirY;
+        this.dir = Math.floor(Math.random() * 4);
+        this.lastDir = Math.floor(Math.random() * 4);
     }
 
     moveUp(steps) {
