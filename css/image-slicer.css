@@ -16,11 +16,6 @@
     width: 100%;
     max-height: 100%;
     max-width: 100%;
-    /* -webkit-transition: top var(--tile-move-time), ease;
-    -moz-transition: top var(--tile-move-time) ease;
-    -ms-transition: top var(--tile-move-time) ease;
-    -o-transition: top var(--tile-move-time) ease;
-    transition: top var(--tile-move-time) ease; */
 }
 
 .slicer-transition-overflow {
@@ -31,9 +26,6 @@
     position: relative;
     display: flex;
     overflow: visible;
-    /* min-width: 100%; */
-    /* justify-content: center;
-    align-items: center; */
     margin: auto;
 }
 
@@ -48,17 +40,14 @@
     display: none;
     padding: 0px;
     object-fit: contain;
-    /* width: fit-content;
-    height: fit-content; */
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
     backface-visibility: hidden;
-    will-change: transform;
-    -webkit-transition: -webkit-transform var(--tile-move-time) ease;
-    -moz-transition: -moz-transform var(--tile-move-time) ease;
-    -ms-transition: -ms-transform var(--tile-move-time) ease;
-    -o-transition: -o-transform var(--tile-move-time) ease;
+    -webkit-transition: transform var(--tile-move-time) ease;
+    -moz-transition: transform var(--tile-move-time) ease;
+    -ms-transition: transform var(--tile-move-time) ease;
+    -o-transition: transform var(--tile-move-time) ease;
     transition: transform var(--tile-move-time) ease;
 }
 
@@ -68,6 +57,3 @@
     min-height: 100vh;
     min-width: 100vw;
 }
-/* .item:hover {
-    background-color: orange; 
-} */

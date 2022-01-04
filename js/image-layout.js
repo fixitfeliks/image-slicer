@@ -46,16 +46,17 @@ export function showTiles(tiles, id) {
 }
 
 export function updateGridLayout(tiles, id) {
-    for (let i = 0; i < tiles.length; i++) {
-        const gridItem = document.getElementById(GRID_ELEMENT_ID + id + tiles[i].id);
-        applyTranslate(gridItem, tiles[i].x, tiles[i].y);
-    }
+    if (tiles != null)
+        for (let i = 0; i < tiles.length; i++) {
+            const gridItem = document.getElementById(GRID_ELEMENT_ID + id + tiles[i].id);
+            applyTranslate(gridItem, tiles[i].x, tiles[i].y);
+        }
 }
 
 function applyTranslate(element, x, y) {
-    element.style.transform = `translate(${x}px, ${y}px)`;
-    element.style.MozTransform = `translate(${x}px, ${y}px)`;
-    element.style.WebkitTransform = `translate(${x}px, ${y}px)`;
-    element.style.OTransform = `translate(${x}px, ${y}px)`;
-    element.style.msTransform = `translate(${x}px, ${y}px)`;
+    element.style.transform = `translate(${x}px, ${y}px) translate3d(0, 0, 0)`;
+    element.style.MozTransform = `translate(${x}px, ${y}px) translate3d(0, 0, 0)`;
+    element.style.WebkitTransform = `translate(${x}px, ${y}px) translate3d(0, 0, 0)`;
+    element.style.OTransform = `translate(${x}px, ${y}px) translate3d(0, 0, 0)`;
+    element.style.msTransform = `translate(${x}px, ${y}px) translate3d(0, 0, 0)`;
 }

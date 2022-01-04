@@ -88,7 +88,7 @@ export class ImageSlicer {
             resizeDebounce = setTimeout(() => {
                 window.requestAnimationFrame(() => {
                     this.scaleTiles();
-                    this.onResize();
+                    if (this.onResize != null) this.onResize();
                 }, 500);
             });
         });
